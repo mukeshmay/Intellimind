@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "af781257-61cb-479e-8ba5-a9b6dd5a4d9a",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test1",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "75e813cf-9eca-41d8-8ff7-0e65c3618d2f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"date\": \"Sep 22 2020 12:00AM\", \"source\": \"https://www.reuters.com/places/india\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/date",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"date"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"startdatetime\": \"Sep 22 2020 9:00PM\",\"enddatetime\": \"Sep 23 2020 12:00AM\", \"source\": \"https://www.reuters.com/places/india\"}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/datetimeapi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"datetimeapi"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
